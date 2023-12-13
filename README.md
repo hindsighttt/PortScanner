@@ -9,6 +9,7 @@ This script is a lightweight and concurrent port scanner that can be used to sca
 - Utilizes threading for concurrent scanning.
 - Outputs open ports to a specified file.
 - Uses colorama for colored terminal output.
+- Has a Flask GUI
 
 ## Prerequisites
 
