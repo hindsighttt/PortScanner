@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Port Scanner</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
 
+    <body>
+        <h1>Port Scanner</h1>
+        <p>Enter IP address range and port range</p>
+            <form method="POST" action="{{ url_for('button_press') }}">
+
+                <label for="ip_start">IP Range start</label>
+                <input type="text" id="ip_start" name="ip_start"><br><br>
+
+                <label for="ip_end">IP Range End</label>
+                <input type="text" id="ip_end" name="ip_end"><br><br>
+
+                <label for="port_start">Port Range Start</label>
+                <input type="text" id="port_start" name="port_start"><br><br>
+
+                <label for="port_end">Port Range End</label>
+                <input type="text" id="port_end" name="port_end"><br><br>
+                
+                <button type="submit" name="scan">Scan</button>
+
+            </form>
+    </body>
+</html>
