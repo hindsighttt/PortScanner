@@ -20,7 +20,7 @@ def scan_port(ip, port, file):
     sock.settimeout(1)
     result = sock.connect_ex((str(ip), port))
     if result == 0:
-        file.write(f"{ip}:{port}\n,")
+        file.write(f"{ip}:{port}\n")
         print(Fore.GREEN,f'{ip}:{port} is open', Fore.RESET)
     else:
         print(Fore.RED, f'{ip}:{port} is closed', Fore.RESET)
