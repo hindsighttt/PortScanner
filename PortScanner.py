@@ -26,11 +26,11 @@ def scan_port(ip, port, file):
         print(Fore.RED, f'{ip}:{port} is closed', Fore.RESET)
     sock.close()
 
-# Example usage:
-start_ip = '172.16.10.1'
-end_ip = '172.16.10.255'
-start_port = 1
-end_port = 5000
-output_file = 'output.txt'
+if __name__ == '__main__':
+    start_ip = '172.16.10.1'
+    end_ip = '172.16.10.255'
+    start_port = 1
+    end_port = 5000
+    output_file = 'output.txt'
 
-scan_ports(start_ip, end_ip, start_port, end_port, output_file)
+    scan_ports(start_ip, end_ip, start_port, end_port, output_file)
